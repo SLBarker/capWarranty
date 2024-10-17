@@ -1,16 +1,22 @@
 {
+  "xsappname":"capwarranty",
+  "tenant-mode":"dedicated",
   "scopes": [
     {
-      "name": "$XSAPPNAME.ClaimViewer",
-      "description": "ClaimViewer"
-    },
-    {
-      "name": "$XSAPPNAME.ClaimManager",
-      "description": "ClaimManager"
+      "name": "$XSAPPNAME.Admin",
+      "description": "Admin"
     }
   ],
   "attributes": [],
   "role-templates": [
+    {
+      "name": "Admin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.Admin"
+      ],
+      "attribute-references": []
+    },
     {
       "name": "ClaimViewer",
       "description": "generated",
@@ -28,12 +34,20 @@
       "attribute-references": []
     }
   ],
+  "oauth2-configuration": {
+    "credential-types": [
+      "binding-secret",
+      "x509"
+    ],
+    "redirect-uris": [
+      "https://*-capwarranty.cfapps.*.hana.ondemand.com/login/callback"
+    ]
+  },
   "role-collections": [
         {
         "name": "ClaimAdminRC",
         "description": "Claim Administrator Role Collection",
         "role-template-references": [
-          "$XSAPPNAME.ClaimViewer",
           "$XSAPPNAME.ClaimManager"
             ]
         }
