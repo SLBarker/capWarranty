@@ -1,4 +1,4 @@
-using ClaimService as service from '../../srv/cat-service';
+using WarrantyService as service from '../../srv/cat-service';
 annotate service.Claims with @(
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',

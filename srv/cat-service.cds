@@ -1,6 +1,6 @@
 using my.warranty as my from '../db/schema';
 
-service ClaimService {
+service WarrantyService {
    // entity Claims @(restrict : [
    //         {
    //             grant : [ 'READ' ],
