@@ -1,0 +1,41 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.ClaimViewer",
+      "description": "ClaimViewer"
+    },
+    {
+      "name": "$XSAPPNAME.ClaimManager",
+      "description": "ClaimManager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "ClaimViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.ClaimViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "ClaimManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.ClaimManager"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "role-collections": [
+        {
+        "name": "ClaimAdminRC",
+        "description": "Claim Administrator Role Collection",
+        "role-template-references": [
+          "$XSAPPNAME.ClaimViewer",
+          "$XSAPPNAME.ClaimManager"
+            ]
+        }
+    ]
+}

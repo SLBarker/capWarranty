@@ -1,0 +1,6 @@
+ID;caseId;claimReason;claimDate;claimStatus;claimAmount;claimResolutionDate;warrantyExpirationDate;productSerialNumber;warrantyType;replacementProductId;claimReviewer
+cbe32993-107b-4695-8d99-c72283e9d45e;CASE001;Defective Product;2021-06-01;Open;1000.00;2021-06-10;2022-06-01;SN123456;Extended Warranty;REPL001;John Doe
+828f9ce1-a0a3-4f6f-8a18-d2e639f1099d;CASE002;Damaged during shipping;2021-06-05;Closed;500.00;2021-06-15;2022-06-05;SN789012;Standard Warranty;REPL002;Jane Smith
+991d4e69-d507-4ce6-867f-057f7805257f;CASE003;Missing Parts;2021-06-10;Open;800.00;2021-06-20;2022-06-10;SN345678;Extended Warranty;REPL003;David Johnson
+75d6fb29-cb5e-4035-aa7b-f84251ef1711;CASE004;Product not as described;2021-06-15;Closed;600.00;2021-06-25;2022-06-15;SN901234;Standard Warranty;REPL004;Emily Davis
+0c590369-6ed3-4600-b4a9-2b165212302f;CASE105;Faulty Battery;2021-06-20;Open;1200.00;2021-06-30;2022-06-20;SN567890;Extended Warranty;REPL005;Michael Wilson
